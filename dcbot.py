@@ -3,7 +3,9 @@
 # 가끔가다 애가 인코딩을 잘못 읽어서 오류를 냅니다. 그것을 대비하기 위해 'utf-8'으로 읽으라고 선언합니다.
 import discord
 import asyncio
-token = "NzU0ODY0NDg3OTU3Mzk3NTk2.X168Vg.3iN5V3jkmCmZCwgGYisDtyHRSlU" # 아까 메모해 둔 토큰을 입력합니다
+import os
+access_token=os.environ["BOT_TOKEN"]
+token = access_token # 아까 메모해 둔 토큰을 입력합니다
 client = discord.Client()
 @client.event
 async def on_ready(): # 봇이 준비가 되면 1회 실행되는 부분입니다.
