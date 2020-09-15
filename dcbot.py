@@ -46,10 +46,36 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
         await message.author.send("4번째: 마크시간 3일 감옥형")
         await message.author.send("5번째: 집 파괴")
 
-    if message.content == "/임베드":
-        embed = discord.Embed(title="embed", description="사과", color=0xff0000) # Embed의 기본 틀(색상, 메인 제목, 설명)을 잡아줍니다
-        embed.add_field(name="code", value="뭐요", inline=True)
-        embed.set_footer(text="하단 설명") # 하단에 들어가는 조그마한 설명을 잡아줍니다
-        await message.channel.send(embed=embed) # embed를 포함 한 채로 메시지를 전송합니다.
-        await message.channel.send("", embed=embed) # embed와 메시지를 함께 보내고 싶으시면 이렇게 사용하시면 됩니다.
+    if message.content.startswith() == "/임베드":
+        if message.content.endswith() == "도개미":
+            embed = discord.Embed(title="도개미", description="도개미", color=0x42c5fa) # Embed의 기본 틀(색상, 메인 제목, 설명)을 잡아줍니다
+            embed.add_field(name="커맨드", value="쫌한다", inline=True)
+            embed.set_footer(text="레드스톤 회로도 쫌 함") # 하단에 들어가는 조그마한 설명을 잡아줍니다
+            embed.set_footer(text="야생도 쫌 함") # 하단에 들어가는 조그마한 설명을 잡아줍니다
+            await message.channel.send(embed=embed) # embed를 포함 한 채로 메시지를 전송합니다.
+            await message.channel.send("", embed=embed) # embed와 메시지를 함께 보내고 싶으시면 이렇게 사용하시면 됩니다.
+        elif message.content.endswith() == "아노":
+            embed = discord.Embed(title="아노", description="아노", color=0x000000) # Embed의 기본 틀(색상, 메인 제목, 설명)을 잡아줍니다
+            embed.add_field(name="트롤", value="개잘한다", inline=True)
+            embed.set_footer(text="맞춤법 틀리기도 잘함") # 하단에 들어가는 조그마한 설명을 잡아줍니다
+            await message.channel.send(embed=embed) # embed를 포함 한 채로 메시지를 전송합니다.
+            await message.channel.send("", embed=embed) # embed와 메시지를 함께 보내고 싶으시면 이렇게 사용하시면 됩니다.
+        elif message.content.endswith() == "앰제이":
+            embed = discord.Embed(title="앰제이", description="앰제이", color=0xffa500) # Embed의 기본 틀(색상, 메인 제목, 설명)을 잡아줍니다
+            embed.add_field(name="건축", value="잘한다", inline=True)
+            embed.set_footer(text="커맨드도 좀함") # 하단에 들어가는 조그마한 설명을 잡아줍니다
+            await message.channel.send(embed=embed) # embed를 포함 한 채로 메시지를 전송합니다.
+            await message.channel.send("", embed=embed) # embed와 메시지를 함께 보내고 싶으시면 이렇게 사용하시면 됩니다.
+        elif message.content.endswith() == "밍찡이":
+            embed = discord.Embed(title="밍찡이", description="밍찡이", color=0xbada55) # Embed의 기본 틀(색상, 메인 제목, 설명)을 잡아줍니다
+            embed.add_field(name="건축", value="잘한다", inline=True)
+            embed.set_footer(text="야생 잘함") # 하단에 들어가는 조그마한 설명을 잡아줍니다
+            await message.channel.send(embed=embed) # embed를 포함 한 채로 메시지를 전송합니다.
+            await message.channel.send("", embed=embed) # embed와 메시지를 함께 보내고 싶으시면 이렇게 사용하시면 됩니다.
+            embed = discord.Embed(title="embed", description="사과", color=0xff0000) # Embed의 기본 틀(색상, 메인 제목, 설명)을 잡아줍니다
+        else:
+            embed.add_field(name="code", value="뭐요", inline=True)
+            embed.set_footer(text="하단 설명") # 하단에 들어가는 조그마한 설명을 잡아줍니다
+            await message.channel.send(embed=embed) # embed를 포함 한 채로 메시지를 전송합니다.
+            await message.channel.send("", embed=embed) # embed와 메시지를 함께 보내고 싶으시면 이렇게 사용하시면 됩니다.
 client.run(token)
