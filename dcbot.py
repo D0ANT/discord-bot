@@ -4,7 +4,7 @@
 import discord
 import asyncio
 import os
-access_token=os.environ["BOT_TOKEN"]
+access_token=os.environ[BOT_TOKEN]
 token = access_token # 아까 메모해 둔 토큰을 입력합니다
 client = discord.Client()
 @client.event
