@@ -78,9 +78,9 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
             embed.set_footer(text="야생 잘함") # 하단에 들어가는 조그마한 설명을 잡아줍니다
             await message.channel.send(embed=embed) # embed를 포함 한 채로 메시지를 전송합니다.
             await message.channel.send("", embed=embed) # embed와 메시지를 함께 보내고 싶으시면 이렇게 사용하시면 됩니다.
-            embed = discord.Embed(title="embed", description="사과", color=0xff0000) # Embed의 기본 틀(색상, 메인 제목, 설명)을 잡아줍니다
             
     if message.content == "/임베드":
+            embed = discord.Embed(title="embed", description="사과", color=0xff0000) # Embed의 기본 틀(색상, 메인 제목, 설명)을 잡아줍니다
             embed.add_field(name="code", value="뭐요", inline=True)
             embed.set_footer(text="하단 설명") # 하단에 들어가는 조그마한 설명을 잡아줍니다
             await message.channel.send(embed=embed) # embed를 포함 한 채로 메시지를 전송합니다.
