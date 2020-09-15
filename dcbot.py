@@ -25,8 +25,8 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
         await message.channel.send("")
         # 이 아래 구문은 메시지를 보낸 사람의 DM으로 메시지를 보냅니다.
         await message.author.send("/법")
-        await message.author.send("/임베드")
         await message.author.send("/명령어")
+        await message.author.send("/임베드 [ /도개미/아노/앰제이/밍찡이]")
     if message.content == "/법":
         await message.author.send("법")
         await message.author.send("명예 훼손죄: 야생서버 kill")
