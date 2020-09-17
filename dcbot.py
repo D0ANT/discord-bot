@@ -71,6 +71,24 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
             embed.set_footer(text="커맨드도 좀함") # 하단에 들어가는 조그마한 설명을 잡아줍니다
             await message.channel.send(embed=embed) # embed를 포함 한 채로 메시지를 전송합니다.
             await message.channel.send("", embed=embed) # embed와 메시지를 함께 보내고 싶으시면 이렇게 사용하시면 됩니다.
+    if message.content == "/임베드 엠제이":
+            embed = discord.Embed(title="앰제이", description="앰제이", color=0xffa500) # Embed의 기본 틀(색상, 메인 제목, 설명)을 잡아줍니다
+            embed.add_field(name="건축", value="잘한다", inline=True)
+            embed.set_footer(text="커맨드도 좀함") # 하단에 들어가는 조그마한 설명을 잡아줍니다
+            await message.channel.send(embed=embed) # embed를 포함 한 채로 메시지를 전송합니다.
+            await message.channel.send("", embed=embed) # embed와 메시지를 함께 보내고 싶으시면 이렇게 사용하시면 됩니다.
+    if message.content == "/임베드 MJ":
+            embed = discord.Embed(title="앰제이", description="앰제이", color=0xffa500) # Embed의 기본 틀(색상, 메인 제목, 설명)을 잡아줍니다
+            embed.add_field(name="건축", value="잘한다", inline=True)
+            embed.set_footer(text="커맨드도 좀함") # 하단에 들어가는 조그마한 설명을 잡아줍니다
+            await message.channel.send(embed=embed) # embed를 포함 한 채로 메시지를 전송합니다.
+            await message.channel.send("", embed=embed) # embed와 메시지를 함께 보내고 싶으시면 이렇게 사용하시면 됩니다.
+    if message.content == "/임베드 mj":
+            embed = discord.Embed(title="앰제이", description="앰제이", color=0xffa500) # Embed의 기본 틀(색상, 메인 제목, 설명)을 잡아줍니다
+            embed.add_field(name="건축", value="잘한다", inline=True)
+            embed.set_footer(text="커맨드도 좀함") # 하단에 들어가는 조그마한 설명을 잡아줍니다
+            await message.channel.send(embed=embed) # embed를 포함 한 채로 메시지를 전송합니다.
+            await message.channel.send("", embed=embed) # embed와 메시지를 함께 보내고 싶으시면 이렇게 사용하시면 됩니다.
             
     if message.content == "/임베드 밍찡이":
             embed = discord.Embed(title="밍찡이", description="밍찡이", color=0xbada55) # Embed의 기본 틀(색상, 메인 제목, 설명)을 잡아줍니다
