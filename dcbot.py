@@ -50,6 +50,93 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
         await message.author.send("4번째: 마크시간 3일 감옥형")
         await message.author.send("5번째: 집 파괴")
 
+
+    #채팅봇
+
+
+    if message.content == "ㅎㅇ":
+        await message.channel.send("ㅇㅇ 나도 ㅎㅇ~")  
+    if message.content == "ㅎㅇ?":
+        await message.channel.send("ㅇㅇ 나도 ㅎㅇ~")
+
+    if message.content == "뭐하냐?":
+        await message.channel.send("너랑 채팅중이잖아ㅋㅋ")
+    if message.content == "ㅎㅇ":
+        await message.channel.send("ㅇㅇ 나도 ㅎㅇ~")  
+    
+    if message.content == "넌 누가 만듬?":
+        await message.channel.send("디스코드 API를 이용함과 동시에 파이썬을 이용해 도개미가 코딩으로 만듬 ㅇㅇ")
+
+    if message.content == "재밌냐?":
+        await message.channel.send("이렇게 채팅이나 하고있는데 재밌겠냐")
+
+    if message.content == "마크로 뭐하냐":
+        await message.channel.send("야생중")
+
+    if message.content == "서버 열어":
+        await message.channel.send("싫음 ^^")
+
+    if message.content == "아무나 나랑 채팅할사람?":
+        await message.channel.send("ㅇㅇ 나랑")    
+    if message.content == "아무나 나랑 얘기할사람?":
+        await message.channel.send("ㅇㅇ 나랑")  
+    if message.content == "나랑 얘기할사람?":
+        await message.channel.send("ㅇㅇ 나랑")  
+    if message.content == "나랑 채팅할사람?":
+        await message.channel.send("ㅇㅇ 나랑")         
+
+    #채팅/ 맨션
+
+    if message.content == "도개미야":
+        await message.channel.send("@도개미")    
+    if message.content == "개미야":
+        await message.channel.send("@도개미")   
+    if message.content == "도개미":
+        await message.channel.send("@도개미")     
+    if message.content == "도개미씨":
+        await message.channel.send("@도개미")
+    if message.content == "개미씨":
+        await message.channel.send("@도개미")                          
+    
+    if message.content == "아노야":
+        await message.channel.send("@트롤아노")
+    if message.content == "아노":
+        await message.channel.send("@트롤아노") 
+    if message.content == "아노씨":
+        await message.channel.send("@트롤아노")    
+
+    if message.content == "엠제이야":
+        await message.channel.send("@엠제이")
+    if message.content == "엠제이":
+        await message.channel.send("@엠제이")  
+    if message.content == "앰제이야":
+        await message.channel.send("@엠제이")  
+    if message.content == "앰제이":
+        await message.channel.send("@엠제이")   
+    if message.content == "제이야":
+        await message.channel.send("@엠제이")
+    if message.content == "앰제이씨":
+        await message.channel.send("@엠제이")
+    if message.content == "엠제이씨":
+        await message.channel.send("@엠제이")
+    if message.content == "제이씨":
+        await message.channel.send("@엠제이")            
+
+    if message.content == "밍찡아":
+        await message.channel.send("@밍찡이")
+    if message.content == "밍밍찡아":
+        await message.channel.send("@밍찡이")
+    if message.content == "밍밍찡":
+        await message.channel.send("@밍찡이")      
+    if message.content == "밍밍찡씨":
+        await message.channel.send("@밍찡이")             
+    if message.content == "밍찡씨":
+        await message.channel.send("@밍찡이")   
+
+
+
+    #임베드
+
     if message.content == "/임베드 도개미":
             embed = discord.Embed(title="도개미", description="도개미", color=0x42c5fa) # Embed의 기본 틀(색상, 메인 제목, 설명)을 잡아줍니다
             embed.add_field(name="커맨드", value="쫌한다", inline=True)
@@ -64,6 +151,18 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
             embed.set_footer(text="맞춤법 틀리기도 잘함") # 하단에 들어가는 조그마한 설명을 잡아줍니다
             await message.channel.send(embed=embed) # embed를 포함 한 채로 메시지를 전송합니다.
             await message.channel.send("", embed=embed) # embed와 메시지를 함께 보내고 싶으시면 이렇게 사용하시면 됩니다.
+    if message.content == "/임베드 트롤아노":
+            embed = discord.Embed(title="아노", description="아노", color=0x000000) # Embed의 기본 틀(색상, 메인 제목, 설명)을 잡아줍니다
+            embed.add_field(name="트롤", value="개잘한다", inline=True)
+            embed.set_footer(text="맞춤법 틀리기도 잘함") # 하단에 들어가는 조그마한 설명을 잡아줍니다
+            await message.channel.send(embed=embed) # embed를 포함 한 채로 메시지를 전송합니다.
+            await message.channel.send("", embed=embed) # embed와 메시지를 함께 보내고 싶으시면 이렇게 사용하시면 됩니다.
+    if message.content == "/임베드 아노트롤":
+            embed = discord.Embed(title="아노", description="아노", color=0x000000) # Embed의 기본 틀(색상, 메인 제목, 설명)을 잡아줍니다
+            embed.add_field(name="트롤", value="개잘한다", inline=True)
+            embed.set_footer(text="맞춤법 틀리기도 잘함") # 하단에 들어가는 조그마한 설명을 잡아줍니다
+            await message.channel.send(embed=embed) # embed를 포함 한 채로 메시지를 전송합니다.
+            await message.channel.send("", embed=embed) # embed와 메시지를 함께 보내고 싶으시면 이렇게 사용하시면 됩니다.                
             
     if message.content == "/임베드 앰제이":
             embed = discord.Embed(title="앰제이", description="앰제이", color=0xffa500) # Embed의 기본 틀(색상, 메인 제목, 설명)을 잡아줍니다
@@ -96,6 +195,18 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
             embed.set_footer(text="야생 잘함") # 하단에 들어가는 조그마한 설명을 잡아줍니다
             await message.channel.send(embed=embed) # embed를 포함 한 채로 메시지를 전송합니다.
             await message.channel.send("", embed=embed) # embed와 메시지를 함께 보내고 싶으시면 이렇게 사용하시면 됩니다.
+    if message.content == "/임베드 밍밍찡":
+            embed = discord.Embed(title="밍찡이", description="밍찡이", color=0xbada55) # Embed의 기본 틀(색상, 메인 제목, 설명)을 잡아줍니다
+            embed.add_field(name="건축", value="잘한다", inline=True)
+            embed.set_footer(text="야생 잘함") # 하단에 들어가는 조그마한 설명을 잡아줍니다
+            await message.channel.send(embed=embed) # embed를 포함 한 채로 메시지를 전송합니다.
+            await message.channel.send("", embed=embed) # embed와 메시지를 함께 보내고 싶으시면 이렇게 사용하시면 됩니다.    
+    if message.content == "/임베드 밍밍찡이":
+            embed = discord.Embed(title="밍찡이", description="밍찡이", color=0xbada55) # Embed의 기본 틀(색상, 메인 제목, 설명)을 잡아줍니다
+            embed.add_field(name="건축", value="잘한다", inline=True)
+            embed.set_footer(text="야생 잘함") # 하단에 들어가는 조그마한 설명을 잡아줍니다
+            await message.channel.send(embed=embed) # embed를 포함 한 채로 메시지를 전송합니다.
+            await message.channel.send("", embed=embed) # embed와 메시지를 함께 보내고 싶으시면 이렇게 사용하시면 됩니다.        
             
     if message.content == "/임베드":
             embed = discord.Embed(title="embed", description="사과", color=0xff0000) # Embed의 기본 틀(색상, 메인 제목, 설명)을 잡아줍니다
