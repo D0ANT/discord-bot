@@ -12,6 +12,7 @@ async def on_ready(): # 봇이 준비가 되면 1회 실행되는 부분입니�
 # 봇이 "반갑습니다"를 플레이 하게 됩니다.
 # 눈치 채셨을지 모르곘지만, discord.Status.online에서 online을 dnd로 바꾸면 "다른 용무 중", idle로 바꾸면 "자리 비움"으로 바뀝니다.
     await client.change_presence(status=discord.Status.online, activity=discord.Game("Minecraft"))
+    await message.channel.send("개미봇 온라인!")
     print("I'm Ready!") # I'm Ready! 문구를 출력합니다.
     print(client.user.name) # 봇의 이름을 출력합니다.
     print(client.user.id) # 봇의 Discord 고유 ID를 출력합니다.
