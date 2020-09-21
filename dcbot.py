@@ -59,6 +59,46 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
     if message.content == "ㅎㅇ?":
         await message.channel.send("ㅇㅇ 나도 ㅎㅇ~")
 
+    if message.content == "ㄹㅇ?":
+        await message.channel.send("ㅇㅇ")    
+
+    if message.content == "ㅋ":
+        await message.channel.send("ㅋ....?")       
+
+    if message.content == "ㅋㅋ":
+        await message.channel.send("ㅋㅋ")   
+
+    if message.content == "ㅋㅋㅋ":
+        await message.channel.send("ㅋㅋㅋㅋㅋㅋ")   
+
+    if message.content == "ㅋㅋㄹㅃㅃ":
+        await message.channel.send("루삥뽕~")
+
+    if message.content == "ㅠㅠ":
+        await message.channel.send("왜우냐..")
+
+    if message.content == "야":
+        await message.channel.send("ㅇ?")
+    if message.content == "야!":
+        await message.channel.send("ㅇ?")
+    if message.content == "야?":
+        await message.channel.send("ㅇ?")
+
+    if message.content == "너 부른거 아님":
+        await message.channel.send("ㅇㅇ..")
+
+    if message.content == "^^":
+        await message.channel.send("재밌냐?")
+        
+    if message.content == "크흠...":
+        await message.channel.send("ㅋㅎ...")        
+
+    if message.content == "?":
+        await message.channel.send("왜?")        
+
+    if message.content == "ㄹㅇ?":
+        await message.channel.send("ㅇㅇ")              
+
     if message.content == "뭐하냐?":
         await message.channel.send("너랑 채팅중이잖아ㅋㅋ")
     if message.content == "뭐함?":
