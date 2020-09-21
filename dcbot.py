@@ -27,11 +27,13 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
         await message.channel.send("/법")
         await message.channel.send("/명령어")
         await message.channel.send("/임베드 [ /도개미/아노/앰제이/밍찡이]")
+        await message.channel.send("/채팅가능내용")
         
         # 이 아래 구문은 메시지를 보낸 사람의 DM으로 메시지를 보냅니다.
         await message.author.send("/법")
         await message.author.send("/명령어")
         await message.author.send("/임베드 [ /도개미/아노/앰제이/밍찡이]")
+        await message.author.send("/채팅가능내용")
         
     if message.content == "/법":
         await message.author.send("법")
@@ -173,6 +175,35 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
     if message.content == "밍찡씨":
         await message.channel.send("@밍찡이")   
 
+
+
+    if message.content == "/채팅가능내용":
+        await message.author.send("ㅎㅇ")
+        await message.author.send("ㅎㅇ?")
+        await message.author.send("ㄹㅇ?")
+        await message.author.send("ㅋ")
+        await message.author.send("ㅋㅋ")
+        await message.author.send("ㅋㅋㅋ")
+        await message.author.send("ㅋㅋㄹㅃㅃ")
+        await message.author.send("ㅠㅠ")
+        await message.author.send("야")
+        await message.author.send("야!")
+        await message.author.send("야?")
+        await message.author.send("너 부른거 아님")
+        await message.author.send("^^")
+        await message.author.send("크흠...")
+        await message.author.send("?")
+        await message.author.send("ㄹㅇ?")
+        await message.author.send("뭐하냐?")
+        await message.author.send("뭐함?")
+        await message.author.send("넌 누가 만듬?")
+        await message.author.send("재밌냐?")
+        await message.author.send("마크로 뭐하냐")
+        await message.author.send("서버 열어")
+        await message.author.send("아무나 나랑 채팅할사람?")
+        await message.author.send("아무나 나랑 얘기할사람?")
+        await message.author.send("나랑 얘기할사람?")
+        await message.author.send("나랑 채팅할사람?")
 
 
     #임베드
