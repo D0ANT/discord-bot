@@ -61,8 +61,8 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
 
     if message.content == "뭐하냐?":
         await message.channel.send("너랑 채팅중이잖아ㅋㅋ")
-    if message.content == "ㅎㅇ":
-        await message.channel.send("ㅇㅇ 나도 ㅎㅇ~")  
+    if message.content == "뭐함?":
+        await message.channel.send("너랑 채팅중이잖아ㅋㅋ")  
     
     if message.content == "넌 누가 만듬?":
         await message.channel.send("디스코드 API를 이용함과 동시에 파이썬을 이용해 도개미가 코딩으로 만듬 ㅇㅇ")
