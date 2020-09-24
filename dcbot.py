@@ -58,171 +58,124 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
         chat = 1
 
     #채팅봇
-
-    if message.content == "ㅎㅇ":
-        if chat != 0:
+    if chat != 0:
+        if message.content == "ㅎㅇ":
             await message.channel.send("ㅇㅇ 나도 ㅎㅇ~")  
-    if message.content == "ㅎㅇ?":
-        if chat != 0:
+        if message.content == "ㅎㅇ?":
             await message.channel.send("ㅇㅇ 나도 ㅎㅇ~")
 
-    if message.content == "ㄹㅇ?":
-        if chat != 0:
+        if message.content == "ㄹㅇ?":
             await message.channel.send("ㅇㅇ")    
 
-    if message.content == "ㅋ":
-        if chat != 0:
+        if message.content == "ㅋ":
             await message.channel.send("ㅋ....?")       
 
-    if message.content == "ㅋㅋ":
-        if chat != 0:
+        if message.content == "ㅋㅋ":
             await message.channel.send("ㅋㅋ")   
 
-    if message.content == "ㅋㅋㅋ":
-        if chat != 0:
+        if message.content == "ㅋㅋㅋ":
             await message.channel.send("ㅋㅋㅋㅋㅋㅋ")   
 
-    if message.content == "ㅋㅋㄹㅃㅃ":
-        if chat != 0:
+        if message.content == "ㅋㅋㄹㅃㅃ":
             await message.channel.send("루삥뽕~")
 
-    if message.content == "ㅠㅠ":
-        if chat != 0:
+        if message.content == "ㅠㅠ":
             await message.channel.send("왜우냐..")
 
-    if message.content == "야":
-        if chat != 0:
+        if message.content == "야":
             await message.channel.send("ㅇ?")
-    if message.content == "야!":
-        if chat != 0:
+        if message.content == "야!":
             await message.channel.send("ㅇ?")
-    if message.content == "야?":
-        if chat != 0:
+        if message.content == "야?":
             await message.channel.send("ㅇ?")
 
-    if message.content == "너 부른거 아님":
-        if chat != 0:
+        if message.content == "너 부른거 아님":
             await message.channel.send("ㅇㅇ..")
 
-    if message.content == "^^":
-        if chat != 0:
+        if message.content == "^^":
             await message.channel.send("재밌냐?")
-        
-    if message.content == "크흠...":
-        if chat != 0:
+
+        if message.content == "크흠...":
             await message.channel.send("ㅋㅎ...")        
 
-    if message.content == "?":
-        if chat != 0:
+        if message.content == "?":
             await message.channel.send("왜?")        
 
-    if message.content == "ㄹㅇ?":
-        if chat != 0:
+        if message.content == "ㄹㅇ?":
             await message.channel.send("ㅇㅇ")              
 
-    if message.content == "뭐하냐?":
-        if chat != 0:
+        if message.content == "뭐하냐?":
             await message.channel.send("너랑 채팅중이잖아ㅋㅋ")
-    if message.content == "뭐함?":
-        if chat != 0:
+        if message.content == "뭐함?":
             await message.channel.send("너랑 채팅중이잖아ㅋㅋ")  
-    
-    if message.content == "넌 누가 만듬?":
-        if chat != 0:
+
+        if message.content == "넌 누가 만듬?":
             await message.channel.send("디스코드 API를 이용함과 동시에 파이썬을 이용해 도개미가 코딩으로 만듬 ㅇㅇ")
 
-    if message.content == "재밌냐?":
-        if chat != 0:
+        if message.content == "재밌냐?":
             await message.channel.send("이렇게 채팅이나 하고있는데 재밌겠냐")
 
-    if message.content == "마크로 뭐하냐":
-        if chat != 0:
+        if message.content == "마크로 뭐하냐":
             await message.channel.send("야생중")
 
-    if message.content == "서버 열어":
-        if chat != 0:
+        if message.content == "서버 열어":
             await message.channel.send("싫음 ^^")
 
-    if message.content == "아무나 나랑 채팅할사람?":
-        if chat != 0:
+        if message.content == "아무나 나랑 채팅할사람?":
             await message.channel.send("ㅇㅇ 나랑")    
-    if message.content == "아무나 나랑 얘기할사람?":
-        if chat != 0:
+        if message.content == "아무나 나랑 얘기할사람?":
             await message.channel.send("ㅇㅇ 나랑")  
-    if message.content == "나랑 얘기할사람?":
-        if chat != 0:
+        if message.content == "나랑 얘기할사람?":
             await message.channel.send("ㅇㅇ 나랑")  
-    if message.content == "나랑 채팅할사람?":
-        if chat != 0:
+        if message.content == "나랑 채팅할사람?":
             await message.channel.send("ㅇㅇ 나랑")         
 
-    #채팅/ 맨션
+        #채팅/ 맨션
 
-    if message.content == "도개미야":
-        if chat != 0:
+        if message.content == "도개미야":
             await message.channel.send("@도개미")    
-    if message.content == "개미야":
-        if chat != 0:
+        if message.content == "개미야":
             await message.channel.send("@도개미")   
-    if message.content == "도개미":
-        if chat != 0:
+        if message.content == "도개미":
             await message.channel.send("@도개미")     
-    if message.content == "도개미씨":
-        if chat != 0:
+        if message.content == "도개미씨":
             await message.channel.send("@도개미")
-    if message.content == "개미씨":
-        if chat != 0:
+        if message.content == "개미씨":
             await message.channel.send("@도개미")                          
-    
-    if message.content == "아노야":
-        if chat != 0:
+
+        if message.content == "아노야":
             await message.channel.send("@트롤아노")
-    if message.content == "아노":
-        if chat != 0:
+        if message.content == "아노":
             await message.channel.send("@트롤아노") 
-    if message.content == "아노씨":
-        if chat != 0:
+        if message.content == "아노씨":
             await message.channel.send("@트롤아노")    
 
-    if message.content == "엠제이야":
-        if chat != 0:
+        if message.content == "엠제이야":
             await message.channel.send("@엠제이")
-    if message.content == "엠제이":
-        if chat != 0:
+        if message.content == "엠제이":
             await message.channel.send("@엠제이")  
-    if message.content == "앰제이야":
-        if chat != 0:
+        if message.content == "앰제이야":
             await message.channel.send("@엠제이")  
-    if message.content == "앰제이":
-        if chat != 0:
+        if message.content == "앰제이":
             await message.channel.send("@엠제이")   
-    if message.content == "제이야":
-        if chat != 0:
+        if message.content == "제이야":
             await message.channel.send("@엠제이")
-    if message.content == "앰제이씨":
-        if chat != 0:
+        if message.content == "앰제이씨":
             await message.channel.send("@엠제이")
-    if message.content == "엠제이씨":
-        if chat != 0:
+        if message.content == "엠제이씨":
             await message.channel.send("@엠제이")
-    if message.content == "제이씨":
-        if chat != 0:
+        if message.content == "제이씨":
             await message.channel.send("@엠제이")            
 
-    if message.content == "밍찡아":
-        if chat != 0:
+        if message.content == "밍찡아":
             await message.channel.send("@밍찡이")
-    if message.content == "밍밍찡아":
-        if chat != 0:
+        if message.content == "밍밍찡아":
             await message.channel.send("@밍찡이")
-    if message.content == "밍밍찡":
-        if chat != 0:
+        if message.content == "밍밍찡":
             await message.channel.send("@밍찡이")      
-    if message.content == "밍밍찡씨":
-        if chat != 0:
+        if message.content == "밍밍찡씨":
             await message.channel.send("@밍찡이")             
-    if message.content == "밍찡씨":
-        if chat != 0:
+        if message.content == "밍찡씨":
             await message.channel.send("@밍찡이")   
 
 
