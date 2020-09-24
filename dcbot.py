@@ -4,6 +4,7 @@
 import discord
 import asyncio
 import os
+chat = 1
 access_token=os.environ['BOT_TOKEN']
 token = access_token # 아까 메모해 둔 토큰을 입력합니다
 client = discord.Client()
@@ -54,13 +55,8 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
         await message.author.send("4번째: 마크시간 3일 감옥형")
         await message.author.send("5번째: 집 파괴")
 
-    if message.content == "/채팅응답 off":
-        chat = 0
-    if message.content == "/채팅응답 on":
-        chat = 1
-
     #채팅봇
-    if chat != 0:
+    if chat == 1:
         if message.content == "ㅎㅇ":
             await message.channel.send("ㅇㅇ 나도 ㅎㅇ~")  
         if message.content == "ㅎㅇ?":
@@ -292,3 +288,4 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
             await message.channel.send("", embed=embed) # embed와 메시지를 함께 보내고 싶으시면 이렇게 사용하시면 됩니다.
             
 client.run(token)
+
