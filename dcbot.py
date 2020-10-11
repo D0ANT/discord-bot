@@ -40,7 +40,10 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
         else:
             await message.channel.send("채팅 응답이 꺼졌습니다.")
             chat = 0
-    
+    if message.content == "/채팅응답":
+        await message.channel.send("/채팅응답 [on/off]")
+    if message.content == "/채팅응답 ":
+        await message.channel.send("/채팅응답 [on/off]")
     if message.content == "/채팅응답 on":
         if chat == 1:
             await message.channel.send("이미 켜져있습니다.")
