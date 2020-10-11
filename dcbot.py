@@ -25,11 +25,7 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
     if message.content == "/명령어": # !명령어 라는 채팅을 친다면
         # 메시지 전송이 두가지 방법이 있습니다. 상황에 맞는 구문을 사용하시면 됩니다.
         # 이 구문은 메시지가 보내진 채널에 메시지를 보내는 구문입니다.
-        await message.channel.send("/법")
-        await message.channel.send("/명령어")
-        await message.channel.send("/임베드 [ /도개미/아노/앰제이/밍찡이]")
-        await message.channel.send("/채팅가능내용")
-        await message.channel.send("/채팅응답 [off/on]")
+        await message.channel.send("")
         
         # 이 아래 구문은 메시지를 보낸 사람의 DM으로 메시지를 보냅니다.
         await message.author.send("/법")
@@ -37,6 +33,20 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
         await message.author.send("/임베드 [ /도개미/아노/앰제이/밍찡이]")
         await message.author.send("/채팅가능내용")
         await message.author.send("/채팅응답 [off/on]")
+        
+    if message.content == "/채팅응답 off":
+        if chat == 0:
+            await message.channel.send("이미 꺼져있습니다.")
+        else:
+            await message.channel.send("채팅 응답이 꺼졌습니다.")
+            chat = 0
+    
+    if message.content == "/채팅응답 on":
+        if chat == 1:
+            await message.channel.send("이미 켜져있습니다.")
+        else:
+            await message.channel.send("채팅 응답이 켜졌습니다.")
+            chat = 1
         
     if message.content == "/법":
         await message.author.send("법")
