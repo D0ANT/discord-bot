@@ -32,7 +32,7 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
         await message.author.send("/명령어")
         await message.author.send("/임베드 [ /도개미/아노/앰제이/밍찡이]")
         await message.author.send("/채팅가능내용")
-        await message.author.send("/채팅응답 [off/on]")
+        await message.author.send("/채팅응답 [off/on/OFF/ON]")
         
     if message.content == "/채팅응답 off" or message.content == "/채팅 응답 off" or message.content == "/채팅응답 OFF" or message.content == "/채팅 응답 OFF":
         if chat == 0:
@@ -40,9 +40,9 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
         else:
             await message.channel.send("채팅 응답이 꺼졌습니다.")
             chat = 0     
-    if message.content == "/채팅응답":
+    if message.content == "/채팅응답" or message.content == "/채팅 응답":
         await message.channel.send("/채팅응답 [on/off]")
-    if message.content == "/채팅응답 ":
+    if message.content == "/채팅응답 " or message.content == "/채팅 응답 ":
         await message.channel.send("/채팅응답 [on/off]")
     if message.content == "/채팅응답 on" or message.content == "/채팅 응답 on" or message.content == "/채팅응답 ON" or message.content == "/채팅 응답 ON":
         if chat == 1:
