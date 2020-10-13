@@ -12,6 +12,7 @@ token = access_token
 client = discord.Client()
 @client.event
 async def on_ready(): # 봇이 준비가 되면 1회 실행되는 부분입니다.
+# made by. D0ANT
 # discord.Status.online에서 online을 dnd로 바꾸면 "다른 용무 중", idle로 바꾸면 "자리 비움"으로 바뀝니다.
     await client.change_presence(status=discord.Status.online, activity=discord.Game("Minecraft"))
     print("I'm Ready!")
@@ -129,7 +130,7 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
             await message.channel.send("야생중")
 
         if message.content == "서버 열어":
-            await message.channel.send("싫음 ^^" #made by D0ANT)
+            await message.channel.send("싫음 ^^")
 
         if message.content == "아무나 나랑 채팅할사람?":
             await message.channel.send("ㅇㅇ 나랑")    
