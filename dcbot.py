@@ -144,50 +144,50 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
         #채팅/ 맨션
 
         if message.content == "도개미야":
-            await message.channel.send("@도개미")    
+            await message.channel.send("@도개미#9343")    
         if message.content == "개미야":
-            await message.channel.send("@도개미")   
+            await message.channel.send("@도개미#9343")   
         if message.content == "도개미":
-            await message.channel.send("@도개미")     
+            await message.channel.send("@도개미#9343")     
         if message.content == "도개미씨":
-            await message.channel.send("@도개미")
+            await message.channel.send("@도개미#9343")
         if message.content == "개미씨":
-            await message.channel.send("@도개미")                          
+            await message.channel.send("@도개미#9343")                          
 
         if message.content == "아노야":
-            await message.channel.send("@트롤아노")
+            await message.channel.send("@트롤아노#0114")
         if message.content == "아노":
-            await message.channel.send("@트롤아노") 
+            await message.channel.send("@트롤아노#0114") 
         if message.content == "아노씨":
-            await message.channel.send("@트롤아노")    
+            await message.channel.send("@트롤아노#0114")    
 
         if message.content == "엠제이야":
-            await message.channel.send("@엠제이")
+            await message.channel.send("@엠제이#0285")
         if message.content == "엠제이":
-            await message.channel.send("@엠제이")  
+            await message.channel.send("@엠제이#0285")  
         if message.content == "앰제이야":
-            await message.channel.send("@엠제이")  
+            await message.channel.send("@엠제이#0285")  
         if message.content == "앰제이":
-            await message.channel.send("@엠제이")   
+            await message.channel.send("@엠제이#0285")   
         if message.content == "제이야":
-            await message.channel.send("@엠제이")
+            await message.channel.send("@엠제이#0285")
         if message.content == "앰제이씨":
-            await message.channel.send("@엠제이")
+            await message.channel.send("@엠제이#0285")
         if message.content == "엠제이씨":
-            await message.channel.send("@엠제이")
+            await message.channel.send("@엠제이#0285")
         if message.content == "제이씨":
-            await message.channel.send("@엠제이")            
+            await message.channel.send("@엠제이#0285")            
 
         if message.content == "밍찡아":
-            await message.channel.send("@밍찡이")
+            await message.channel.send("@밍밍찡이#8472")
         if message.content == "밍밍찡아":
-            await message.channel.send("@밍찡이")
+            await message.channel.send("@밍밍찡이#8472")
         if message.content == "밍밍찡":
-            await message.channel.send("@밍찡이")      
+            await message.channel.send("@밍밍찡이#8472")      
         if message.content == "밍밍찡씨":
-            await message.channel.send("@밍찡이")             
+            await message.channel.send("@밍밍찡이#8472")             
         if message.content == "밍찡씨":
-            await message.channel.send("@밍찡이")   
+            await message.channel.send("@밍밍찡이#8472")   
 
 
 
