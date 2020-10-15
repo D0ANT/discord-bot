@@ -3,7 +3,6 @@ import discord
 import asyncio
 import os
 chat = 1
-mention = 1
 access_token=os.environ['BOT_TOKEN']
 MJid=os.environ['MJid']
 MINGid=os.environ['MINGid']
@@ -33,25 +32,7 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
         await message.author.send("/명령어")
         await message.author.send("/임베드 [ /도개미/아노/앰제이/밍찡이]")
         await message.author.send("/채팅가능내용")
-        await message.author.send("/채팅응답 [off/on/OFF/ON]")
-        await message.author.send("/멘션응답 [off/on/OFF/ON]")
-        
-    if message.content == "/멘션응답 off" or message.content == "/멘션 응답 off" or message.content == "/멘션응답 OFF" or message.content == "/멘션 응답 OFF":
-        if mention == 0:
-            await message.channel.send("이미 꺼져있습니다.")
-        else:
-            await message.channel.send("멘션 응답이 꺼졌습니다.")
-            mention = 0   
-    if message.content == "/멘션응답" or message.content == "/멘션 응답":
-        await message.channel.send("/멘션응답 [on/off]")
-    if message.content == "/멘션응답 " or message.content == "/멘션 응답 ":
-        await message.channel.send("/멘션응답 [on/off]")
-    if message.content == "/멘션응답 on" or message.content == "/멘션 응답 on" or message.content == "/멘션응답 ON" or message.content == "/멘션 응답 ON":
-        if mention == 1:
-            await message.channel.send("이미 켜져있습니다.")
-        else:
-            await message.channel.send("채팅 응답이 켜졌습니다.")
-            mention = 1       
+        await message.author.send("/채팅응답 [off/on/OFF/ON]")    
         
     if message.content == "/채팅응답 off" or message.content == "/채팅 응답 off" or message.content == "/채팅응답 OFF" or message.content == "/채팅 응답 OFF":
         if chat == 0:
@@ -162,53 +143,53 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
 
         #맨션
         
-        if mention == 1:
+      
  
-            if message.content == "도개미야":
-                await message.channel.send(DOANTid)    
-            if message.content == "개미야":
-                await message.channel.send(DOANTid)   
-            if message.content == "도개미":
-                await message.channel.send(DOANTid)     
-            if message.content == "도개미씨":
-                await message.channel.send(DOANTid)
-            if message.content == "개미씨":
-                await message.channel.send(DOANTid)                          
+        if message.content == "도개미야":
+            await message.channel.send(DOANTid)    
+        if message.content == "개미야":
+            await message.channel.send(DOANTid)   
+        if message.content == "도개미":
+            await message.channel.send(DOANTid)     
+        if message.content == "도개미씨":
+            await message.channel.send(DOANTid)
+        if message.content == "개미씨":
+            await message.channel.send(DOANTid)                          
 
-            if message.content == "아노야":
-                await message.channel.send(ANOid)
-            if message.content == "아노":
-                await message.channel.send(ANOid) 
-            if message.content == "아노씨":
+        if message.content == "아노야":
+            await message.channel.send(ANOid)
+        if message.content == "아노":
+            await message.channel.send(ANOid)
+        if message.content == "아노씨":
                 await message.channel.send(ANOid)    
 
-            if message.content == "엠제이야":
-                await message.channel.send(MJid)
-            if message.content == "엠제이":
-                await message.channel.send(MJid)  
-            if message.content == "앰제이야":
-                await message.channel.send(MJid)  
-            if message.content == "앰제이":
-                await message.channel.send(MJid)   
-            if message.content == "제이야":
-                await message.channel.send(MJid)
-            if message.content == "앰제이씨":
-                await message.channel.send(MJid)
-            if message.content == "엠제이씨":
-                await message.channel.send(MJid)
-            if message.content == "제이씨":
-                await message.channel.send(MJid)            
+        if message.content == "엠제이야":
+            await message.channel.send(MJid)
+        if message.content == "엠제이":
+            await message.channel.send(MJid)  
+        if message.content == "앰제이야":
+            await message.channel.send(MJid)  
+        if message.content == "앰제이":
+            await message.channel.send(MJid)   
+        if message.content == "제이야":
+            await message.channel.send(MJid)
+        if message.content == "앰제이씨":
+            await message.channel.send(MJid)
+        if message.content == "엠제이씨":
+            await message.channel.send(MJid)
+        if message.content == "제이씨":
+            await message.channel.send(MJid)            
 
-            if message.content == "밍찡아":
-                await message.channel.send(MINGid)
-            if message.content == "밍밍찡아":
-                await message.channel.send(MINGid)
-            if message.content == "밍밍찡":
-                await message.channel.send(MINGid)      
-            if message.content == "밍밍찡씨":
-                await message.channel.send(MINGid)             
-            if message.content == "밍찡씨":
-                await message.channel.send(MINGid)   
+        if message.content == "밍찡아":
+            await message.channel.send(MINGid)
+        if message.content == "밍밍찡아":
+            await message.channel.send(MINGid)
+        if message.content == "밍밍찡":
+            await message.channel.send(MINGid)      
+        if message.content == "밍밍찡씨":
+            await message.channel.send(MINGid)             
+        if message.content == "밍찡씨":
+            await message.channel.send(MINGid)   
 
 
 
