@@ -58,7 +58,7 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
             await message.channel.send("이미 꺼져있습니다.")
         else:
             await message.channel.send("멘션 응답이 꺼졌습니다.")
-            mention = 1     
+            mention = 0   
     if message.content == "/멘션응답" or message.content == "/멘션 응답":
         await message.channel.send("/멘션응답 [on/off]")
     if message.content == "/멘션응답 " or message.content == "/멘션 응답 ":
