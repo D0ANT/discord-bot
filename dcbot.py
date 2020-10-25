@@ -44,54 +44,5 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
         else:
             await message.channel.send("채팅 응답이 꺼졌습니다.")
             chat = 0
-        #맨션
-     
-      
- '''
-        if message.content == "도개미야":
-            await message.channel.send(DOANTid)    
-        if message.content == "개미야":
-            await message.channel.send(DOANTid)   
-        if message.content == "도개미":
-            await message.channel.send(DOANTid)     
-        if message.content == "도개미씨":
-            await message.channel.send(DOANTid)
-        if message.content == "개미씨":
-            await message.channel.send(DOANTid)                          
-
-        if message.content == "아노야":
-            await message.channel.send(ANOid)
-        if message.content == "아노":
-            await message.channel.send(ANOid)
-        if message.content == "아노씨":
-                await message.channel.send(ANOid)    
-
-        if message.content == "엠제이야":
-            await message.channel.send(MJid)
-        if message.content == "엠제이":
-            await message.channel.send(MJid)  
-        if message.content == "앰제이야":
-            await message.channel.send(MJid)  
-        if message.content == "앰제이":
-            await message.channel.send(MJid)   
-        if message.content == "제이야":
-            await message.channel.send(MJid)
-        if message.content == "앰제이씨":
-            await message.channel.send(MJid)
-        if message.content == "엠제이씨":
-            await message.channel.send(MJid)
-        if message.content == "제이씨":
-            await message.channel.send(MJid)            
-
-        if message.content == "밍찡아":
-            await message.channel.send(MINGid)
-        if message.content == "밍밍찡아":
-            await message.channel.send(MINGid)
-        if message.content == "밍밍찡":
-            await message.channel.send(MINGid)      
-        if message.content == "밍밍찡씨":
-            await message.channel.send(MINGid)             
-        if message.content == "밍찡씨":
-            await message.channel.send(MINGid)'''
 
 client.run(token)
