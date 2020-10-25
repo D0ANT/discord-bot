@@ -38,11 +38,8 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
         # 이 아래 구문은 메시지를 보낸 사람의 DM으로 메시지를 보냅니다.
         await message.author.send("")
         
-    if message.content == "/채팅응답 off" or message.content == "/채팅 응답 off" or message.content == "/채팅응답 OFF" or message.content == "/채팅 응답 OFF":
+    if message.content == "/채팅응답 off":
         if chat == 0:
             await message.channel.send("이미 꺼져있습니다.")
-        else:
-            await message.channel.send("채팅 응답이 꺼졌습니다.")
-            chat = 0
 
 client.run(token)
