@@ -21,7 +21,7 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
     if message.author.bot: # 채팅을 친 사람이 봇일 경우
         return None # 반응하지 않고 구문을 종료합니다.
     
-    if message.content == "/명령어": # !명령어 라는 채팅을 친다
+    if message.content == "/test": # !명령어 라는 채팅을 친다
         # 이 구문은 메시지가 보내진 채널에 메시지를 보내는 구문입니다.
         await message.channel.send("test")
         # 이 아래 구문은 메시지를 보낸 사람의 DM으로 메시지를 보냅니다.
@@ -31,6 +31,8 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
       
     
     if message.content == "A~":
-        await message.channel.send("AAAAAAAAeyo")
+        await message.channel.send("AAAAAAAAeyo~")
+    if message.content == "/execute":
+        await message.channel.send("execute 명령어 도움기능은 추후 추가 ")    
 
 client.run(token)
