@@ -15,14 +15,6 @@ async def on_ready(): # 봇이 준비가 되면 1회 실행되는 부분입니�
     print(client.user.name)
     print(client.user.id)
 @client.event
-async def on_ready(): # 봇이 준비가 되면 1회 실행되는 부분입니다.
-# made by. D0ANT
-# discord.Status.online에서 online을 dnd로 바꾸면 "다른 용무 중", idle로 바꾸면 "자리 비움"으로 바뀝니다.
-    await client.change_presence(status=discord.Status.online, activity=discord.Game("Minecraft"))
-    print("I'm Ready!")
-    print(client.user.name)
-    print(client.user.id)
-@client.event
 async def on_message(message): # 메시지가 들어 올 때마다 가동되는 구문입니다.
     global chat
     
@@ -34,9 +26,8 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
         await message.channel.send("test")
         # 이 아래 구문은 메시지를 보낸 사람의 DM으로 메시지를 보냅니다.
         await message.author.send("test")
-        #맨션
-     
-      
+    
+    #execute 도움
     
     if message.content == "A~":
         await message.channel.send("AAAAAAAAeyo~")
@@ -54,6 +45,15 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
         await message.channel.send("실행 개체의 위치를 가정한다 . (/execute postioned [x좌표] [y좌표] [z좌표])")
     if message.content == "/execute facing":
         await message.channel.send("실행 개체의 시야를 가정한다. (/execute facing [시야X] [시야Z])")
-    
+    if message.content == "/execute if":
+        await message.channel.send("이 뒤에 나오는 데이터값이 참일때 다음 명령어를 실행한다. (/execute if [block,blocks,entity,data,score])")    
+    if message.content == "/execute unless":
+        await message.channel.send("이 뒤에 나오는 데이터값이 거짓일때 다음 명령어를 실행한다. (/execute unless [block,blocks,entity,data,score])")
+    if message.content == "/execute in":
+        await message.channel.send("이 지정된 월드안에서 명령어를 실행한다. (/execute in overworld,nether,the_end)")
+    if message.content == "/execute run":
+        await message.channel.send("이 명령어 앞에 모든것이 통과되었을때 뒤에 나오는 명령어를 실행한다. (/execute run 명령어)")
+    if message.content == "/execute store":
+        await message.channel.send("execute run뒤에 나오는 결과값 내용을 지정된 형태에 저장한다. (/execute store [result,succes])")
 
 client.run(token)
