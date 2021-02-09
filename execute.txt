@@ -1,0 +1,12 @@
+execute align - 
+execute as - 그 개체에 기준으로 명령어를 실행한다.
+execute at - 그 개체에 위치를 기준으로'만' 명령어를 실행한다.
+execute rotation - 개체의 회전을 가정한다.
+execute postioned - 개체의 위치를 가정한다.
+execute facing - 개체의 시야를 가정한다.
+execute if - 무언가의 참,거짓을 가린다음, 참이라면 뒤에 명령어를 실행한다.
+execute unless - 무언가의 참,거짓을 가린다음, 거짓이라면 뒤에 명령어를 실행한다.
+execute in - 지정된 월드에 안에서 명령어를 실행한다.
+execute run - 앞에 모든것이 통과되었을시에 뒤에 있는 명령어를 실행한다.
+execute store result - 무언가에다가 내용을 저장한다.
+execute store succes - 내용을 1,0으로 저장한다.(true=1,false=0)
