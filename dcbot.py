@@ -144,8 +144,8 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
         await message.channel.send("도개미는 코딩중이여서 당근을 흔들고있다. (?)")
     if message.content == "/source_code":
         await message.channel.send("소스코드 링크: https://github.com/D0ANT/discord-bot/blob/master/dcbot.py")
-    
+    if message.content == "/추가요청":
+        await message.channel.send("추가요청 링크: https://github.com/D0ANT/discord-bot/issues/1")
 
 
 client.run(token)
-
