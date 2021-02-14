@@ -18,10 +18,7 @@ async def on_ready(): # 봇이 준비가 되면 1회 실행되는 부분입니�
 async def on_ready(): # 봇이 준비가 되면 1회 실행되는 부분입니다.
 # made by. D0ANT
 # discord.Status.online에서 online을 dnd로 바꾸면 "다른 용무 중", idle로 바꾸면 "자리 비움"으로 바뀝니다.
-    await client.change_presence(status=discord.Status.online, activity=discord.Game("Minecraft"))
-    print("I'm Ready!")
-    print(client.user.name)
-    print(client.user.id)
+    await client.change_presence(status=discord.Status.online, activity=discord.Game("코딩"))
 @client.event
 async def on_message(message): # 메시지가 들어 올 때마다 가동되는 구문입니다.
     global chat
